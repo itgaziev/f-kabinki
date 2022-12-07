@@ -21,20 +21,14 @@
                 <a href="" class="button-site btn-lg">Подробнее</a>
             </div>
             <div class="col-lg-6">
-                <div class="carousel about-carousel">
-                    <div class="carousel__slide">
-                        <a href="@img/about/1.png"><img src="@img/about/1.png" alt=""></a>
-                    </div>
-                    <div class="carousel__slide">
-                        <a href="@img/about/2.png"><img src="@img/about/2.png" alt=""></a>
-                    </div>
-                    <div class="carousel__slide">
-                        <a href="@img/about/3.png"><img src="@img/about/3.png" alt=""></a>
-                    </div>
-                    <div class="carousel__slide">
-                        <a href="@img/about/4.png"><img src="@img/about/4.png" alt=""></a>
-                    </div>
-                </div>
+                @@include('../../components/swiper-dots.htm', {
+                    "classes" : "about-slider", 
+                    "slideItem" : [
+                    { "img" : "@img/about/1.png"},
+                    { "img" : "@img/about/2.png"},
+                    { "img" : "@img/about/3.png"},
+                    { "img" : "@img/about/4.png"},
+                ]})
             </div>
         </div>
     </div>

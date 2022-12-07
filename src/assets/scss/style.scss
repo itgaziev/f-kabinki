@@ -7,8 +7,10 @@ body {
     font-family: 'NunitoSans',Arial,sans-serif;
     font-style: normal;
     font-weight: 400;
+    background: #FFF;
+}
+.wrapper {
     background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(248,250,252,1));
-
 }
 img {
     max-width: 100%;
@@ -196,7 +198,7 @@ section.section {
     background-repeat: no-repeat;
 }
 
-ul {
+ul[class=""]  {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -235,7 +237,11 @@ ul {
         margin: 0;
     }
 }
-
+a.swiper-bg {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 .mb-6 {
     margin-bottom: 5rem;
 }
@@ -271,6 +277,9 @@ ul {
 
 @import 'components/iconText';
 @import 'components/boxImage';
+
+
+@import 'components/about';
 
 @import 'parts/header';
 @import 'parts/mobileMenu';
