@@ -1,0 +1,17 @@
+.white-text {
+    color: #FFF !important;
+}
+
+h2.title-num {
+    position: relative;
+    text-align: left;
+}
+
+h2.title-num::before {
+    content: attr(data-num);
+    position: absolute;
+    color: #007192;
+    font-size: 200px;
+    bottom: -75px;
+    opacity: 0.05;
+}

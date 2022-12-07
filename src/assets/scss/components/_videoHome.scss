@@ -1,0 +1,14 @@
+.video-home {
+    .iframe {
+        max-width: 960px;
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-home {
+        .iframe {
+            height: 340px;
+        }
+    }
+}

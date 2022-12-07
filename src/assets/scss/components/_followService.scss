@@ -1,0 +1,105 @@
+.service-item {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border-right: 1px solid #d6e9f3;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    .service-item__image img {
+        border-radius: 10px;
+    }
+    .service-item__num {
+        display: block;
+        color: #3091c5;
+        font-size: 20px;
+        line-height: 31px;
+        font-weight: 400;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .follow-service {
+        .right-border {
+            border-bottom: 1px solid #d6e9f3;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    .service-item {
+        display: grid;
+        grid-template-areas:
+            "image num"
+            "image name"
+            "image text";
+        row-gap: 0px;
+        column-gap: 1rem;
+
+        .service-item__image {
+            grid-area: image;
+            max-height: 190px;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .service-item__num {
+            grid-area: num;
+        }
+
+        .service-item__name {
+            grid-area: name;
+        }
+        .service-item__text {
+            grid-area: text;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .follow-service {
+        .right-border {
+            border-bottom: 1px solid #d6e9f3;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+    .service-item {
+        display: grid;
+        grid-template-areas: 
+        "image"
+        "num"
+        "name"
+        "text";
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        column-gap: 1rem;
+
+        .service-item__image {
+            grid-area: image;
+            max-height: auto;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .service-item__num {
+            grid-area: num;
+        }
+
+        .service-item__name {
+            grid-area: name;
+        }
+        .service-item__text {
+            grid-area: text;
+        }
+    }
+}

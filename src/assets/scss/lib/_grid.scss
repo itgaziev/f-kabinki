@@ -1,0 +1,13 @@
+.d-grid {
+    display: grid;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}

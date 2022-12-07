@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+    .about-home {
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        .about-carousel {
+            .carousel__slide {
+                max-height: 470px;
+                > a {
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    > img {
+                        border-radius: 10px;
+                        max-width: unset;
+                        width: unset;
+                        min-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

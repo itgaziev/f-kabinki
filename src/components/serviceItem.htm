@@ -1,0 +1,15 @@
+<div class="service-item">
+    <div class="service-item__image">
+        <img src="@@image" alt="">
+    </div>
+    <span class="service-item__num">@@num</span>
+    <div class="service-item__name name-box">@@name</div>
+    <div class="service-item__text text-box">
+        @@description
+    </div>
+    @@if (showOrder === 'Y') {
+        <div class="service-item__button">
+            @@include('button.htm', { "text" : "Заказать"})
+        </div>
+    }
+</div>

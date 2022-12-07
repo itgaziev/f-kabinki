@@ -1,0 +1,150 @@
+@@include('html/header.html', { "title" : "Как заказать" })
+@@include('html/components/breadcrumbs.html')
+<div class="wrapper">
+    @@include('html/components/form1.section.html')
+
+    <section class="sections section-num">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="title-num" data-num="01">Предварительная оценка проекта</h2>
+                    <p>Для расчета предварительной стоимости нам понадобится примерная схема помещения с указанием размеров, положения окон и дверей, пожеланиями по количеству кабинок и их размещению.</p>
+                    <div class="d-flex" style="column-gap: 1rem; flex-wrap: wrap;">
+                        @@include('components/button-outline.htm', {"text" : "Примеры схем", "classes" : "w-260 mb-2"})
+                        <span>Для предварительного расчета</span>
+                    </div>
+                    @@include('components/button.htm', {"text" : "Расчитать стоимость", "classes" : "w-260 "})
+
+                </div>
+                <div class="col-md-6">
+                    <div class="box-outline mb-3">
+                        <p class="p-bold">Если у вас готов собственный проект — присылайте.</p>
+                        <div class="icon-text">
+                            <div class="icon-text__icon">
+                                <img src="@img/hto_icon_1.svg" alt="">
+                            </div>
+                            <div class="icon-text__text">
+                                Проверим на соответствие нормативам.
+                            </div>
+                        </div>
+                        <div class="icon-text">
+                            <div class="icon-text__icon">
+                                <img src="@img/hto_icon_2.svg" alt="">
+                            </div>
+                            <div class="icon-text__text">
+                                Посчитаем стоимость реализации.
+                            </div>
+                        </div>
+                        <div class="icon-text">
+                            <div class="icon-text__icon">
+                                <img src="@img/hto_icon_3.svg" alt="">
+                            </div>
+                            <div class="icon-text__text">
+                                Предложим свой вариант расположения кабин, если увидим, что это можно сделать лучше.
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="lite"><span class="important">ВНИМАНИЕ:</span> стоимость проекта может быть скорректирована после уточнения габаритов помещения и утверждения схемы расстановки.</p>
+                </div>
+            </div>
+            
+    
+            
+        </div>
+    </section>
+
+    <section class="sections section-num">
+        <div class="container">
+            <h2 class="title-num" data-num="02">Разработка проекта</h2>
+            <p class="desc-title">Разработаем детальный проект, чтобы изготовить физиотерапевтические кабины в точном соответствии с геометрией вашего помещения. Только в этом случае процесс сборки пройдет быстро, и с ним справится любой квалифицированный сборщик.</p>
+            <div class="d-grid grid-3 round-white-box">
+                @@include('components/serviceItem.htm', { 
+                    "image" : "@img/service-1.png", 
+                    "num" : "01", 
+                    "name" : "Установка электрических щитков",
+                    "description" : "У наших электриков третий уровень доступа на электробезопасность, поэтому мы можем работать с электрооборудованием до 1000 В",
+                    "showOrder" : "Y"
+                })
+                @@include('components/serviceItem.htm', { 
+                    "image" : "@img/service-1.png", 
+                    "num" : "02", 
+                    "name" : "Обработка штор огнестойким составом",
+                    "description" : "Для соблюдения правил пожарной безопасности в физиотерапевтических отделениях (ППБО 07-91) и прохождении ежегодной проверки.",
+                    "showOrder" : "Y"
+                })
+                @@include('components/serviceItem.htm', { 
+                    "image" : "@img/service-1.png", 
+                    "num" : "03", 
+                    "name" : "Отпаривание штор",
+                    "description" : "Используем профессиональные отпариватели, чтобы вернуть помятым шторам эстетичный внешний вид.",
+                    "showOrder" : "Y"
+                })
+            </div>
+        </div>
+    </section>
+
+    <section class="sections section-num">
+        <div class="container">
+            <h2 class="title-num" data-num="03">Производство</h2>
+            <p class="desc-title">Кабинки будут готовы в течение полутора-двух недель после согласования проекта и цветовой гаммы материалов.</p>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6 mb-3"><a href=""><span style="background-image: url(@img/how-to-order/img_1.png);" class="box-image-w2"></span></a></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 mb-3"><a href=""><span style="background-image: url(@img/how-to-order/img_2.png);" class="box-image-w2"></span></a></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 mb-3"><a href=""><span style="background-image: url(@img/how-to-order/img_3.png);" class="box-image-w2"></span></a></div>
+                <div class="col-md-3 col-sm-6 col-xs-6 mb-3"><a href=""><span style="background-image: url(@img/how-to-order/img_4.png);" class="box-image-w2"></span></a></div>
+            </div>
+        </div>
+    </section>
+    <section class="sections section-num">
+        <div class="container">
+            <h2 class="title-num" data-num="04">Доставка</h2>
+            <div class="box-outline">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="p-lite">Если монтаж выполняет наша компания — все вопросы с доставкой мы берем на себя.</p>
+                        <p class="p-lite"><b>По Санкт-Петербургу и Ленинградской области</b> Доставляем за 1-2 рабочих дня с момента изготовления.</p>
+                        <p class="p-lite">
+                            <b>По России</b><br/>
+                            Отправляем транспортными компаниями, которые есть в нашем и вашем городе. Конструкция будет надежно упакована и укомплектована инструкцией по сборке. Срок доставки зависит от расстояния и условий перевозчика.
+                        </p>
+                        <p class="p-lite">Вместе с кабинками вы получите техпаспорт изделия, сертификаты соответствия и письмо из Росздравнадзора. Этих документов будет достаточно, чтобы в случае проверки у комиссии не было вопросов к конструкции и материалам.</p>
+                    </div>
+                </div>
+                <div class="bg-traffic" style="background-image: url(@img/how-to-order/traffic.png)"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections section-num">
+        <div class="container">
+            <h2 class="title-num" data-num="05">Монтаж</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box-outline">
+                        @@include('components/serviceItem.htm', { 
+                            "image" : "@img/service-1.png", 
+                            "num" : "01", 
+                            "name" : "Установка электрических щитков",
+                            "description" : "У наших электриков третий уровень доступа на электробезопасность, поэтому мы можем работать с электрооборудованием до 1000 В",
+                            "showOrder" : "N"
+                        })
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box-outline">
+                        @@include('components/serviceItem.htm', { 
+                            "image" : "@img/service-1.png", 
+                            "num" : "01", 
+                            "name" : "Установка электрических щитков",
+                            "description" : "У наших электриков третий уровень доступа на электробезопасность, поэтому мы можем работать с электрооборудованием до 1000 В",
+                            "showOrder" : "N"
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+@@include('html/footer.html', {})
