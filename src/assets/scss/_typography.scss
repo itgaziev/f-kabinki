@@ -10,8 +10,34 @@ h2.title-num {
 h2.title-num::before {
     content: attr(data-num);
     position: absolute;
-    color: #007192;
+    color: $titleColor;
     font-size: 200px;
     bottom: -75px;
     opacity: 0.05;
+}
+
+h3 {
+    color: #002d64;
+    font-size: 24px;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-align: center;
+}
+.banner-home__title {
+    text-align: left;
+}
+.banner-home__subtitle {
+    text-align: left;
+    color: $primary;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-bottom: 1rem;
 }

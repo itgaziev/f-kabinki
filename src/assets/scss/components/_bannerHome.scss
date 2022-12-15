@@ -1,7 +1,7 @@
 .banner-home {
     position: relative;
     font-size: 18px;
-    
+    z-index: 1;
     .bg-banner {
         position: absolute;
         left: 0;
@@ -20,7 +20,7 @@
     }
 
     .banner-home__title {
-        color: #1586c2;
+        color: $hoverText;
         font-size: 32px;
         line-height: 45px;
         font-weight: 800;
@@ -34,7 +34,7 @@
     }
 
     .banner-home__text {
-        color: #001c3d;
+        color: $darkText;
         line-height: 1.25;
         font-weight: 400;
         background-position: center center;
@@ -44,6 +44,11 @@
 
     .banner-home__button {
         margin-top: 2rem;
+    }
+
+    .banner-image > img {
+        max-width: unset;
+        max-height: 620px;
     }
 }
 
@@ -73,7 +78,7 @@
             line-height: 25px;
         }
         .banner-home__text {
-            color: #001c3d;
+            color: $darkText;
             font-size: 18px !important;
             line-height: 25px !important;
 

@@ -7,7 +7,7 @@
 
         border-width: 1px;
         border-radius: 10px;
-        background-color: #ffffff;
+        background-color: $white;
         background-position: center center;
         border-color: transparent;
         border-style: solid;
@@ -19,7 +19,7 @@
             flex-direction: column;
             padding: 1rem 2rem;
             row-gap: 1rem;
-            border-right: 1px solid #d6e9f3;
+            border-right: 1px solid $lightBlue;
 
             &:last-child {
                 border-right: none;
@@ -37,7 +37,7 @@
                 }
             }
             .pr-grid__name {
-                color: #002d64;
+                color: $darkBlue;
                 font-size: 18px;
                 line-height: 1.55;
                 font-weight: 700;
@@ -46,7 +46,7 @@
                 height: 60px;
             }
             .pr-grid__text {
-                color: #001c3d;
+                color: $darkText;
                 font-size: 16px;
                 line-height: 25px;
                 font-weight: 500;

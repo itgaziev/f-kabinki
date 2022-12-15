@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.27.9",
+    "critical": "^5.0.3",
     "del": "^6.0.0",
     "fancybox": "^3.0.1",
     "fs": "^0.0.1-security",

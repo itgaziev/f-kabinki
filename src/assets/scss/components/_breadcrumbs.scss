@@ -16,11 +16,11 @@ ul.breadcrumbs {
             content: unset;
         }
         &.current {
-            color: #1586c2;
+            color: $hoverText;
         }
         > a {
             text-decoration: none;
-            color: #001c3d;
+            color: $darkText;
             padding-right: 1rem;
         }
     }

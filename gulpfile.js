@@ -22,6 +22,7 @@ import { reset } from './gulp/task/reset.js'
 import { html } from './gulp/task/html.js'
 import { server } from './gulp/task/server.js'
 import { scss } from './gulp/task/scss.js'
+import { criticalTask } from './gulp/task/criticalTask.js'
 import { js } from './gulp/task/js.js'
 import { images } from './gulp/task/images.js'
 import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/task/fonts.js'
@@ -43,7 +44,7 @@ export { svgSprive }
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
 
 //Основные задачи
-const mainTask = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images))
+const mainTask = gulp.series(fonts, gulp.parallel(copy, html, scss, criticalTask, js, images))
 
 //Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTask, gulp.parallel(watcher, server))

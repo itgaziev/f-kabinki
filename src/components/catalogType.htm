@@ -1,0 +1,39 @@
+@@for (var i = 0; i < items.length; i++) {
+    <div class="col-md-4 col-sm-6">
+        <div class="catalog-item type-1">
+            <div class="catalog-item__slide">
+                <div class="swiper swiper-arrow catalog-item__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-item">
+                                <a href="@img/catalog/type1-0.jpg" data-fancybox="item-`+items[i].id+`" class="swiper-catalog">
+                                    <img src="@img/catalog/type1-0.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-item">
+                                <a href="@img/catalog/type1-1.png" data-fancybox="item-`+items[i].id+`" class="swiper-catalog">
+                                    <img src="@img/catalog/type1-1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-btn-arrow swiper-button-next"></div>
+                    <div class="swiper-btn-arrow swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="catalog-item__type">
+                <span>`+items[i].name+`</span>
+            </div>
+            <div class="catalog-item__desc">
+                `+items[i].description+`
+            </div>
+            <div class="catalog-item__btn">
+                @@include('button.htm', {"text" : "Заказать", "classes" : "btn-catalog"}) 
+                @@include('button-outline.htm', {"text" : "Подробнее", "classes" : "btn-catalog"}) 
+            </div>
+        </div>
+
+    </div>
+}

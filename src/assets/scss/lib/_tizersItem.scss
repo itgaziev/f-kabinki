@@ -2,7 +2,7 @@
         
     height: 225px;
     width: 100%;
-    border-right: 1px solid #d6e9f3;
+    border-right: 1px solid $lightBlue;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -17,7 +17,7 @@
     }
 
     .tizers-home__text {
-        color: #001c3d;
+        color: $darkText;
         font-size: 16px;
         line-height: 25px;
         font-weight: 500;

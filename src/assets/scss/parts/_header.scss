@@ -8,7 +8,7 @@ a.logo-link {
     align-items: center;
     line-height: 18px;
     column-gap: 10px;
-    color: #3091c5;
+    color: $primary;
     text-decoration: none;
     font-weight: 700;
     font-size: 14px;
@@ -33,7 +33,7 @@ a.logo-link > img {
 }
 .header-contacts__item a {
     text-decoration: none;
-    color: #001c3d;
+    color: $darkText;
     font-weight: 700;
 }
 .header-contacts__item .icon-contact {
@@ -46,7 +46,7 @@ a.logo-link > img {
     line-height: 22px;
     font-size: 14px;
     font-weight: 400;
-    color: #001c3d;
+    color: $darkText;
 }
 
 .social-items {
@@ -68,25 +68,25 @@ a.logo-link > img {
 
 .btn-callback {
     padding: 12px 22px;
-    color: #002d64;
+    color: $darkBlue;
     font-size: 11px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-width: 2px;
     border-radius: 30px;
-    background-color: #ffffff;
+    background-color: $white;
     background-position: center center;
-    border-color: #002d64;
+    border-color: $darkBlue;
     border-style: solid;
     box-shadow: 0px 4px 10px 0px rgb(0 28 61 / 0%);
 }
 
 .btn-callback:hover {
-    background-color: #002d64;
+    background-color: $darkBlue;
     background-image: none;
-    border-color: #002d64;
-    color: #ffffff;
+    border-color: $darkBlue;
+    color: $white;
 }
 
 .menu__list {
@@ -105,7 +105,7 @@ a.logo-link > img {
     display: inline-block;
     margin: 0;
     white-space: nowrap;
-    color: #001c3d;
+    color: $darkText;
 }
 
 .menu__list .menu__list_item .menu__link-item {
@@ -117,11 +117,11 @@ a.logo-link > img {
 }
 
 .menu__list .menu__list_item .menu__link-item:hover {
-    color: #3091c5;
+    color: $primary;
 }
 
 .menu__list .menu__list_item .menu__link-item.active {
-    color: #001c3d;
+    color: $darkText;
     font-weight: 600;
 }
 

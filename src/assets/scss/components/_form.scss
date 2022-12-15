@@ -1,7 +1,7 @@
 .form-popap {
     max-width: 520px;
     .title {
-        color: #3091c5;
+        color: $primary;
         font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
@@ -10,7 +10,7 @@
         text-align: center;
     }
     .description {
-        color: #001c3d;
+        color: $darkText;
         font-size: 18px;
         font-weight: 400;
         line-height: 1.55;
@@ -35,8 +35,8 @@
         box-sizing: border-box;
         outline: none;
         border-radius: 0;
-        color: #001c3d;
-        border: 1px solid #3091c5;
+        color: $darkText;
+        border: 1px solid $primary;
 
         &.input_bbonly {
             outline: 0;
@@ -55,9 +55,9 @@
     }
 
     .submit {
-        color: #ffffff;
-        border: 2px solid #002d64;
-        background-color: #002d64;
+        color: $white;
+        border: 2px solid $darkBlue;
+        background-color: $darkBlue;
         border-radius: 30px;
         font-weight: 700;
         text-transform: uppercase;
@@ -71,7 +71,7 @@
 }
 .uploadfile-title {
     display: block;
-    color: #001c3d;
+    color: $darkText;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.55;
@@ -81,8 +81,8 @@
 	display: inline-block;
 
     span {
-        color: #ffffff;
-        background-color: #002d64;
+        color: $white;
+        background-color: $darkBlue;
         border-radius: 30px;
         font-size: 16px;
         max-width: 250px;
@@ -112,13 +112,13 @@
     }
 
     &:active span {
-        color: #ffffff;
-        background-color: #002d64;
+        color: $white;
+        background-color: $darkBlue;
     }
 
     &:hover span {
-        color: #ffffff;
-        background-color: #002d64;
+        color: $white;
+        background-color: $darkBlue;
     }
 }
 
@@ -129,7 +129,7 @@
     padding: 2rem;
 
     .form-title {
-        color: #ffffff;
+        color: $white;
         font-size: 38px;
         line-height: 59px;
         font-weight: 800;
@@ -140,7 +140,7 @@
     }
 
     .form-text {
-        color: #ffffff;
+        color: $white;
         font-size: 18px;
         line-height: 28px;
         font-weight: 400;
@@ -180,7 +180,7 @@
             margin-top: 15px;
             font-size: 13px;
             text-align: left;
-            color: #ffffff;
+            color: $white;
             font-weight: 400;
             a {
                 color: #FFF;
@@ -188,8 +188,8 @@
         }
 
         .submit {
-            color: #ffffff;
-            background-color: #002d64;
+            color: $white;
+            background-color: $darkBlue;
             border-radius: 100px;
             font-weight: 800;
             font-size: 12px;

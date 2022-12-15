@@ -1,6 +1,3 @@
-import * as flsFunction from './modules/functions.js'
-flsFunction.isWebp();
-
 $(document).ready(function() {
     $(document).on('click', '.burger', function() {
         $(this).parent().addClass('toggled');
@@ -12,16 +9,19 @@ $(document).ready(function() {
         $(this).closest('.mobile-menu').removeClass('toggled');
     })
 
+    new Swiper(".swiper-arrow", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 })
 const swiperDots = new Swiper(".swiper-dots", {
     pagination: {
       el: ".swiper-pagination",
-    },
-});
-const swiperArrow = new Swiper(".swiper-arrow", {
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
     },
 });
 
@@ -42,9 +42,4 @@ const swiperCoverflow = new Swiper(".swiper-coverflow", {
       el: ".swiper-pagination",
     },
 });
-// const myCarousel = new Carousel(document.querySelector(".about-carousel"), {
-//     center: true,
-//     slidesPerPage: 1,
-//     fill: true,
-//     Navigation: false
-// });
+

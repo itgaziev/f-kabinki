@@ -3,14 +3,14 @@
     padding: 1rem 2rem;
     text-transform: uppercase;
     text-align: center;
-    color: #ffffff;
+    color: $white;
     font-size: 12px;
     line-height: 1.55;
     font-weight: 800;
     letter-spacing: 0.5px;
     border-width: 2px;
     border-radius: 30px;
-    background-color: #002d64;
+    background-color: $darkBlue;
     background-position: center center;
     border-color: transparent;
     border-style: solid;
@@ -25,7 +25,7 @@
 .button-outline {
     display: inline-block;
     padding: 1rem 2rem;
-    color: #002d64;
+    color: $darkBlue;
     font-size: 12px;
     line-height: 1.55;
     font-weight: 800;
@@ -35,7 +35,7 @@
     border-radius: 30px;
     background-color: #fff;
     background-position: center center;
-    border-color: #002d64;
+    border-color: $darkBlue;
     border-style: solid;
     box-shadow: 0 4px 10px 0 rgb(0 28 61 / 0%);
     text-align: center;
@@ -46,8 +46,8 @@
 }
 
 .button-outline:hover {
-    background-color: #002d64;
+    background-color: $darkBlue;
     background-image: none;
-    border-color: #002d64;
+    border-color: $darkBlue;
     color: #fff;
 }

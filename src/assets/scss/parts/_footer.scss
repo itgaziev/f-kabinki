@@ -1,5 +1,5 @@
 .footer {
-    background-color: #3091c5;
+    background-color: $primary;
     padding: 4rem 0;
 
     a.logo-link {
@@ -87,7 +87,7 @@
         display: flex;
         flex-direction: column;
         line-height: 22px;
-        color: #ffffff;
+        color: $white;
         font-size: 15px;
         font-weight: 600;
     

@@ -15,7 +15,7 @@
     right: 15px;
     top: 30px;
     z-index: 99999;
-    background-color: #3091c5;
+    background-color: $primary;
     border-radius: 100px;
     cursor: pointer;
     transition: opacity ease-in-out .2s;
@@ -52,7 +52,7 @@
     overflow: hidden;
     overflow-y: auto;
     transform: translate(100%,0);
-    background-color: #ffffff;
+    background-color: $white;
     transition: all ease-in-out 0.3s;
 }
 
@@ -118,7 +118,7 @@ button.close-mob-menu > span {
 }
 
 .mob-menu__list > .mob-menu__list_item .mob-menu__link-item {
-    color: #002d64;
+    color: $darkBlue;
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;

@@ -1,0 +1,35 @@
+.grid-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.icon-item {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+
+    &.dev {
+        border: 1px solid #efefef;
+    }
+}
+
+.i-safe {
+    background: url(../img/icons/safe.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.i-check {
+    background: url(../img/icons/check.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.i-truck {
+    background: url(../img/icons/truck.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.i-ten {
+    background: url(../img/icons/ten.svg) center center no-repeat;
+    background-size: contain;
+}

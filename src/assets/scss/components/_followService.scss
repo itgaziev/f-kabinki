@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    border-right: 1px solid #d6e9f3;
+    border-right: 1px solid $lightBlue;
 
     &:last-child {
         border-right: none;
@@ -14,7 +14,7 @@
     }
     .service-item__num {
         display: block;
-        color: #3091c5;
+        color: $primary;
         font-size: 20px;
         line-height: 31px;
         font-weight: 400;
@@ -27,7 +27,7 @@
 @media screen and (max-width: 1024px) {
     .follow-service {
         .right-border {
-            border-bottom: 1px solid #d6e9f3;
+            border-bottom: 1px solid $lightBlue;
 
             &:last-child {
                 border-bottom: 0;
@@ -66,7 +66,7 @@
 @media screen and (max-width: 560px) {
     .follow-service {
         .right-border {
-            border-bottom: 1px solid #d6e9f3;
+            border-bottom: 1px solid $lightBlue;
 
             &:last-child {
                 border-bottom: 0;
