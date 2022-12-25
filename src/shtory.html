@@ -1,0 +1,18 @@
+@@include('html/header.html', { "title" : "Как заказать" })
+@@include('html/components/breadcrumbs.html')
+<div class="wrapper">
+    @@include('components/banners/banner.htm', { 
+        "title" : "Физиотерапевтиская кабина Тип 1: «Каркас + Штора»", 
+        "subtitle" : false, 
+        "image" : "@img/banners/img-1.jpg",
+        "showOrder" : false,
+        "icons" : [
+            { "iconClass" : "i-time", "text" : "Подойдет, если вы ищете недорогое решение" },
+            { "iconClass" : "i-check", "text" : "Вместе с кабинами вы получите техпаспорт изделия, сертификаты соответствия и письмо из Росздравнадзора" },
+            { "iconClass" : "i-guard", "text" : "Гарантия — 2 года.<br>Срок эксплуатации — 10 ле" },
+            { "iconClass" : "i-safe", "text" : "Срок изготовления от 2-х дней" },
+        ] 
+    }) 
+    @@include('components/shtory/boxes.htm', {})
+</div>
+@@include('html/footer.html', {})

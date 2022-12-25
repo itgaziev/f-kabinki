@@ -1,0 +1,21 @@
+.boxes {
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    box-shadow: 0px 0px 10px 0px rgb(131 145 153 / 30%);
+    padding: 2rem;
+    &.box-blue {
+        background-color: #3091c6;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .boxes {
+        &.box-blue {
+            border-radius: 0 10px 10px 0;
+        }
+    }   
+}

@@ -265,7 +265,13 @@ a.swiper-bg {
     }
 }
 
-
+.circle-white {
+    display: inline-block;
+    width: 32px;
+    background: #FFF;
+    border-radius: 100px;
+    height: 32px;
+}
 @import 'table';
 
 //libs
@@ -313,3 +319,4 @@ a.swiper-bg {
 //OTHER
 @import 'banners';
 @import 'quiz';
+@import 'boxes';
