@@ -1,0 +1,34 @@
+<section class="sections type-params mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box-outline stretch-box">
+                    <h2 class="title-2">Технические характеристики:</h2>
+                    <div class="table-params">
+                        <div class="table-params__left-params">
+                            <ul class="no-styled">
+                                @@for (var i = 0; i < params.length; i++) {
+                                    <li class="text-style-1"><b>`+params[i].name+`:</b> `+params[i].value+`</li>
+                                }
+                            </ul>
+                        </div>
+                        <div class="table-params__delimiter">}</div>
+                        <div class="table-params__right-text text-style-1">
+                            Габариты можно изменить под размеры помещения.
+                        </div>
+                    </div>
+                    @@for (var i = 0; i < attributes.length; i++) {
+                        <p class="text-style-1"><b>`+attributes[i].name+`:</b> `+attributes[i].value+`</p>
+                    }
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box-outline stretch-box">
+                    <h2 class="title-2">Дополнительные опции:</h2>
+                    <p class="text-style-1"><b>Каркас</b> из экструдированного алюминиевого профиля. Порошковая окраска металлических деталей каркаса.</p>
+                    <p class="text-style-1"><b>Шторы:</b> хлопковые, антистатические, экранирующие, огнестойкие</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

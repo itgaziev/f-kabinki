@@ -6,8 +6,26 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.auto-grid {
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+
+.grid-check {
+    grid-template-columns: repeat(auto-fit,minmax(165px,1fr));
+    grid-gap: 0.5rem;
+}
+
+.service-item__image > img {
+    width: 100%;
+}
 @media screen and (max-width: 1024px) {
     .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    .grid-2 {
         grid-template-columns: 1fr;
     }
 }

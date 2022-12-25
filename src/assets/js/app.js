@@ -18,6 +18,65 @@ $(document).ready(function() {
             prevEl: ".swiper-button-prev",
         },
     });
+    new Swiper(".swiper-arrow-section", {
+        grabCursor: true,
+        centeredSlides: false,
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 10
+            },
+             769: {
+              slidesPerView: 3,
+              spaceBetween: 10
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 10
+            },
+            1140: {
+              slidesPerView: 4,
+              spaceBetween: 5
+            },
+        }
+    });
+
+    $(document).on('click', '.btn-quiz', function() {
+        let form = $(this).closest('form');
+        let goNext = false;
+        let activeIndex = 0;
+        $(form).find('.step-form').each(function(index, element) {
+          if($(element).hasClass('active')) {
+            activeIndex = index;
+          }
+        })
+
+
+        if($(this).attr('data-type') == 'next') {
+          if(typeof($(form).find('.step-form')[activeIndex + 1]) === "undefined") return;
+          let prevElem = $(form).find('.step-form')[activeIndex];
+          $(prevElem).removeClass('active')
+          let nextElem = $(form).find('.step-form')[activeIndex + 1];
+          $(nextElem).addClass('active')
+        } else if($(this).attr('data-type') == 'prev') {
+          if(typeof($(form).find('.step-form')[activeIndex - 1]) === "undefined") return;
+          let prevElem = $(form).find('.step-form')[activeIndex];
+          $(prevElem).removeClass('active')
+          let nextElem = $(form).find('.step-form')[activeIndex - 1];
+          $(nextElem).addClass('active')
+        }
+    })
 })
 const swiperDots = new Swiper(".swiper-dots", {
     pagination: {

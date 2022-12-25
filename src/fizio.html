@@ -75,7 +75,7 @@
         <div class="container">
             <h2 style="margin-bottom: 1rem;">Материалы</h2>
             <h3 style="margin-bottom: 2rem;">Используем разрешенные нормативными документами материалы</h3>
-            <div class="d-grid grid-3 round-white-box">
+            <div class="d-grid auto-grid">
                 @@include('components/card.htm', { 
                     "image" : "@img/service-1.png", 
                     "name" : "Установка электрических щитков",
@@ -88,9 +88,10 @@
                 })
                 @@include('components/card.htm', { 
                     "image" : "@img/service-1.png", 
-                    "name" : "Отпаривание штор",
-                    "description" : "Используем профессиональные отпариватели, чтобы вернуть помятым шторам эстетичный внешний вид.",
+                    "name" : "Обработка штор огнестойким составом",
+                    "description" : "Для соблюдения правил пожарной безопасности в физиотерапевтических отделениях (ППБО 07-91) и прохождении ежегодной проверки.",
                 })
+
             </div>
         </div>
     </section>
@@ -100,11 +101,26 @@
             <div class="row">
                 <div class="col-md-7">
                     <h2 style="text-align: left;">Документы и гарантии</h2>
-                    <p>Кабины поставляются с полным комплектом сопроводительных документов, необходимых для прохождения лицензирования физиотерапевтического кабинета и регулярных проверок.</p>
+                    <p class="b-text">Кабины поставляются с полным комплектом сопроводительных документов, необходимых для прохождения лицензирования физиотерапевтического кабинета и регулярных проверок.</p>
                 </div>
                 <div class="col-md-4">
-                    <div class="icon-item-title">
-                        
+                    <div class="icon-text w120 ">
+                        <div class="icon-text__icon">
+                            <i class="icon-item i-check"></i>
+                        </div>
+                        <div class="icon-text__text">
+                            <p class="title">2 года</p>
+                            <p class="b-text">Гарантия на изделие</p>
+                        </div>
+                    </div>
+                    <div class="icon-text w120 ">
+                        <div class="icon-text__icon">
+                            <i class="icon-item i-ten"></i>
+                        </div>
+                        <div class="icon-text__text">
+                            <p class="title">10 лет</p>
+                            <p class="b-text">Срок эксплуатации</p>
+                        </div>
                     </div>
                 </div>
             </div>

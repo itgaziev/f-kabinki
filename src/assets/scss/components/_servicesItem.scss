@@ -4,13 +4,21 @@
     flex-direction: column;
     row-gap: 1rem;
     border-right: 1px solid $lightBlue;
-
+    background: #FFF;
     &:last-child {
         border-right: none;
     }
 
-    .service-item__image img {
-        border-radius: 10px;
+    .service-item__image {
+        max-height: 320px;
+        overflow: hidden;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        img {
+            border-radius: 10px;
+        }
     }
     .service-item__num {
         display: block;

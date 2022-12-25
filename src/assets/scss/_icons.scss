@@ -6,8 +6,8 @@
 
 .icon-item {
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
 
     &.dev {
         border: 1px solid #efefef;
@@ -31,5 +31,15 @@
 
 .i-ten {
     background: url(../img/icons/ten.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.i-time {
+    background: url(../img/icons/time.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.i-guard {
+    background: url(../img/icons/guard.svg) center center no-repeat;
     background-size: contain;
 }

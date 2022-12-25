@@ -4,17 +4,28 @@ ul.list-banner-1 {
     margin: 1rem 0;
 
     li {
-        display: flex;
+        display: grid;
+        grid-template-columns: 38px 1fr;
         align-items: center;
-        column-gap: 1rem;
+        gap: 1rem;
         font-size: 20px;
         margin: 0;
         padding: 0;
         margin-bottom: 1rem;
         i {
             position: relative;
-            top: -5px;
             width: 38px;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .order-button {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 120px;
+        text-align: center;
     }
 }

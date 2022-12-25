@@ -1,0 +1,38 @@
+<section class="banner-home">
+    <div class="bg-banner"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-home__left">
+                    @@if (subtitle) {
+                        <h2 class="banner-home__subtitle" style="padding-top: 2rem;">@@subtitle</h2>
+                    }
+                    <h1 class="banner-home__title">@@title</h1>
+                    @@if(icons.length) {
+                    <div class="banner-home__description">
+                        <ul class="list-banner-1">
+                            @@for (var i = 0; i < icons.length; i++) {
+                            <li>
+                                <i class="icon-item `+icons[i].iconClass+`"></i>
+                                <span>`+icons[i].text+`</span>
+                            </li>
+                            }
+                        </ul>
+                    </div>
+                    }
+                    @@if(showOrder) {
+                        <div class="order-button">
+                            <a href="" class="button-site btn-lg">Заказать</a>
+                        </div>
+                    }
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="banner-image">
+                    <img src="@@image" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

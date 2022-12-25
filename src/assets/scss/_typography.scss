@@ -24,7 +24,6 @@ h3 {
     background-position: center center;
     border-color: transparent;
     border-style: solid;
-    text-align: center;
 }
 .banner-home__title {
     text-align: left;
@@ -40,4 +39,42 @@ h3 {
     border-color: transparent;
     border-style: solid;
     margin-bottom: 1rem;
+}
+
+.b-text {
+    color: $darkBlue;
+    font-size: 24px;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+ul.no-styled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-style-1 {
+    color: $darkBlue;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-bottom: 0;
+}
+
+.title-2 {
+    color: #3091c5;
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-bottom: 0;
 }

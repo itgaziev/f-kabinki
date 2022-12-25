@@ -1,0 +1,15 @@
+.table-params {
+    display: grid;
+    grid-template-columns: 1fr 20px 1.5fr;
+    align-items: center;
+    margin-bottom: 1rem;
+    .table-params__delimiter {
+        color: #3091c5;
+        font-size: 42px;
+        line-height: 1.55;
+        font-weight: 400;
+        background-position: center center;
+        border-color: transparent;
+        border-style: solid;
+    }
+}

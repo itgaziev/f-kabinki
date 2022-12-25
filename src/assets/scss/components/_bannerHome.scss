@@ -2,6 +2,8 @@
     position: relative;
     font-size: 18px;
     z-index: 1;
+    overflow: hidden;
+    max-width: 199%;
     .bg-banner {
         position: absolute;
         left: 0;
@@ -59,9 +61,8 @@
             padding: 2rem 0;
         }
         .banner-image {
-            height: 320px;
             img {
-                display: none;
+                width: 100%;
             }
         }
     }

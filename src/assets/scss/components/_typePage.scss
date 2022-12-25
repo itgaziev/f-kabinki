@@ -1,0 +1,43 @@
+.description-type {
+    margin-top: 1rem;
+    background: $white;
+    padding: 1rem 0;
+}
+.description-overflow {
+    height: 380px;
+    overflow-y: auto;
+}
+
+a.round-image {
+    display: flex;
+    width: 100%;
+    height: 210px;
+    margin-bottom: 1.5rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+p.upper-text {
+    color: #007192;
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.doc-grid-slide {
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.doc-grid-slide > .doc-grid__item {
+    min-width: 222px;
+}
