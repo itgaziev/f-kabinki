@@ -1,0 +1,60 @@
+@@include('html/header.html', { "title" : "Главная" })
+@@include('html/components/breadcrumbs.html')
+<div class="wrapper">
+  <section class="sections">
+    <div class="container">
+      <h1 class="pad-0 mb3">Личный кабинет</h1>
+
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="nav flex-column nav-pills mb-6">
+            <a class="nav-link active" aria-current="page" href="#">Мои заказы</a>
+            <a class="nav-link" href="#">Личные данные</a>
+            <a class="nav-link" href="#">Сменить пароль</a>
+            <a class="nav-link" href="#">История заказов</a>
+            <a class="nav-link" href="#">Корзина</a>
+            <a class="nav-link" href="#">Выйти</a>
+          </nav>
+        </div>
+        <div class="col-md-9">
+          <div class="personal_wrapper">
+            <div class="orders_wrapper">
+              <div class="block-order">
+                <div class="block-order__title">Личные данные</div>
+                <div class="block-order__property">
+                  <span class="block-order__name">Имя:</span>
+                  <span class="block-order__value">test</span>
+                </div>
+                <div class="block-order__property">
+                  <span class="block-order__name">Фамилия:</span>
+                  <span class="block-order__value">test</span>
+                </div>
+                <div class="block-order__property">
+                  <span class="block-order__name">Телефон:</span>
+                  <span class="block-order__value">+9 (999) 999-9999</span>
+                </div>
+                <div class="block-order__property">
+                  <span class="block-order__name">Почта:</span>
+                  <span class="block-order__value">test@yandex.ru</span>
+                </div>
+
+              </div>
+
+              <div class="block-order">
+                  <div class="order-item__buttons">
+                    <div class="left-btn">
+                    </div>
+                    <div class="right-btn">
+                      <a href="" class="btn btn-repeat">Изменить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+@@include('html/footer.html', {})

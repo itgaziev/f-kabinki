@@ -102,9 +102,16 @@
     position: fixed;
     z-index: 99990;
     bottom: 20px;
-    right: 20px;
+    right: -999px;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
     border-radius: 100px;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    &.showBtn {
+        right: 20px;
+        opacity: 1;
+        transition: all ease-in-out 0.3s;
+    }
 }
 
 @media screen and (max-width: 1024px) {

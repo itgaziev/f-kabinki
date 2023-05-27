@@ -1,18 +1,31 @@
-@@include('html/header.html', { "title" : "Как заказать" })
+@@include('html/header.html', { "title" : "Услуги" })
 @@include('html/components/breadcrumbs.html')
 <div class="wrapper">
-    @@include('components/banners/banner.htm', { 
-        "title" : "Физиотерапевтиская кабина Тип 1: «Каркас + Штора»", 
-        "subtitle" : false, 
+    @@include('components/banners/banner.htm', {
+        "title" : "Льняные шторы для физиотерапевтических кабин",
+        "subtitle" : false,
         "image" : "@img/banners/img-1.jpg",
         "showOrder" : false,
         "icons" : [
-            { "iconClass" : "i-time", "text" : "Подойдет, если вы ищете недорогое решение" },
-            { "iconClass" : "i-check", "text" : "Вместе с кабинами вы получите техпаспорт изделия, сертификаты соответствия и письмо из Росздравнадзора" },
-            { "iconClass" : "i-guard", "text" : "Гарантия — 2 года.<br>Срок эксплуатации — 10 ле" },
-            { "iconClass" : "i-safe", "text" : "Срок изготовления от 2-х дней" },
-        ] 
-    }) 
-    @@include('components/shtory/boxes.htm', {})
+            { "iconClass" : "i-time", "text" : "Большой ассортимент расцветок и узоров" },
+            { "iconClass" : "i-check", "text" : "Плотная приятная на ощупь ткань" },
+            { "iconClass" : "i-guard", "text" : "Доставка по всей России" },
+        ]
+    })
+    @@include('components/shtory/detail.html')
+    @@include('components/shtory/html-table.html')
+    @@include('components/shtory/color-map.html')
+    @@include('components/shtory/color-map2.html')
+    @@include('components/shtory/html-4.html')
+    @@include('components/shtory/examples.html')
+    @@include('components/shtory/document.html')
+    @@include('components/shtory/html-1.html')
+    @@include('components/shtory/html-3.html')
+    @@include('html/components/form1.section.html')
+    @@include('components/shtory/switch-block.html')
+    @@include('components/shtory/switch-block2.html')
+    @@include('components/shtory/html-5.html')
+    @@include('components/shtory/tab-catalog.html')
+    @@include('html/components/slider-description.html')
 </div>
 @@include('html/footer.html', {})

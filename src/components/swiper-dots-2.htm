@@ -1,0 +1,12 @@
+<div class="swiper swiper-dots @@classes">
+    <div class="swiper-wrapper">
+        @@for (var i = 0; i < slideItem.length; i++) {
+            <div class="swiper-slide">
+                <div class="slide-item">
+                    <a href="`+slideItem[i].img+`" class="swiper-bg" style="background-image: url(`+slideItem[i].img+`);"></a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="swiper-pagination"></div>
+</div>

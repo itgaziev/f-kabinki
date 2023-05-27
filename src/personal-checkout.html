@@ -1,0 +1,111 @@
+@@include('html/header.html', { "title" : "Главная" })
+@@include('html/components/breadcrumbs.html')
+<div class="wrapper">
+  <section class="sections">
+    <div class="container">
+      <h1 class="pad-0 mb3">Личный кабинет</h1>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="personal_wrapper">
+            <div class="orders_wrapper">
+              <div class="block-order">
+                <div class="block-order__title">Ваша корзина</div>
+
+                <div class="cart-list">
+                  <div class="cart-list__wrapper">
+                    <div class="cart-item">
+                      <div class="cart-item__image">
+                        <img src="@img/catalog/type1-0.jpg" alt="">
+                      </div>
+                      <div class="cart-item__name">
+                        <a href="">Щиток розеточный физиотерапевтический ЭЩР-Ф-ОПТИМА-22</a>
+                      </div>
+                      <div class="cart-item__counter">
+                        <span class="input-btn btn-minus">-</span>
+                        <input type="text" class="input input-quantity" value="1"/>
+                        <span class="input-btn btn-plus">+</span>
+                      </div>
+                      <div class="cart-item__price">
+                        <span class="price">2 345 руб.</span>
+                      </div>
+                      <div class="cart-item__remove">x</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="block-order">
+                <div class="block-order__title">Персональные данные</div>
+
+                <form class="reg-form row g-3" novalidate>
+                  <div class="col-md-12">
+                    <label for="inputFirstName" class="form-label">Имя <span class="req-star">*</span></label>
+                    <input type="text" class="form-control" id="inputFirstName" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPhone" class="form-label">Телефон <span class="req-star">*</span></label>
+                    <input type="tel" class="form-control" id="inputPhone"required>
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Адрес доставки</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                  </div>
+
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="formFile" class="form-label">Ваши реквизиты</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="inputComments" class="form-label">Комментарий</label>
+                    <textarea class="form-control" id="inputComments" placeholder=""></textarea>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <a href="" class="btn btn-cancel">Вернуться</a>
+                      </div>
+                      <div class="col-md-6" style="text-align: right">
+                        <button class="btn btn-repeat" style="padding-left: 2rem; padding-right: 2rem; margin: 0">Оформить заказ</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="total-wrapper" style="padding-bottom: 1rem; margin-bottom: 1rem;">
+              <div class="block-order">
+                <div class="block-order__title">Ваш заказ</div>
+                <div class="block-order__property">
+                  <span class="block-order__name">Товаров на:</span>
+                  <span class="block-order__value">99 999 руб.</span>
+                </div>
+              </div>
+              <hr/>
+
+              <div class="block-order">
+                <div class="block-order__property">
+                  <span class="block-order__name"><b>Итого</b>:</span>
+                  <span class="block-order__value"><b>99 999 руб.</b></span>
+                </div>
+              </div>
+              <button class="btn btn-repeat" style="width: 100%; margin: 0">Оформить заказ</button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+@@include('html/footer.html', {})

@@ -1,0 +1,84 @@
+@@include('html/header.html', { "title" : "Главная" })
+@@include('html/components/breadcrumbs.html')
+<div class="wrapper">
+  <section class="sections">
+    <div class="container">
+      <h1 class="pad-0 mb-0">Регистрация</h1>
+      <p>После регистрации или авторизации на сайте вам будет доступно отслеживание состояния заказов, личный кабинет и другие новые возможности.</p>
+
+      <div class="row">
+        <div class="col-md-6"  style="margin-bottom: 3rem">
+          <div class="box-outline h-stretch">
+            <h2 class="title-2  mb-3">Авторизация</h2>
+            <form class="form-auth">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+              </div>
+              <button type="submit" class="btn btn-callback" style="min-width: 220px">Войти</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-6"  style="margin-bottom: 3rem">
+          <div class="box-outline h-stretch">
+            <h2 class="title-2 mb-3">Регистрация</h2>
+
+            <form class="reg-form row g-3" novalidate>
+              <div class="col-md-6">
+                <label for="inputFirstName" class="form-label">Имя <span class="req-star">*</span></label>
+                <input type="text" class="form-control" id="inputFirstName" required>
+              </div>
+              <div class="col-md-6">
+                <label for="inputLastName" class="form-label">Фамилия <span class="req-star">*</span></label>
+                <input type="text" class="form-control" id="inputLastName"required>
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email <span class="req-star">*</span></label>
+                <input type="email" class="form-control" id="inputEmail"required>
+              </div>
+              <div class="col-md-6">
+                <label for="inputPhone" class="form-label">Телефон <span class="req-star">*</span></label>
+                <input type="tel" class="form-control" id="inputPhone"required>
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Ваш адрес</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+              </div>
+              <div class="col-12">
+                <label for="inputPassword" class="form-label">Пароль <span class="req-star">*</span></label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <div id="passwordHelpBlock" class="form-text">Ваш пароль должен состоять из 8-20 символов, содержать буквы и цифры и не должен содержать пробелов, специальных символов или эмодзи.</div>
+              </div>
+              <div class="col-12">
+                <label for="inputRepeatPassword" class="form-label">Подтверждение пароля <span class="req-star">*</span></label>
+                <input type="password" class="form-control" id="inputRepeatPassword" placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <div class="invalid-feedback">Пароли не совподают</div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                  <label class="form-check-label" for="gridCheck">Я согласен на обработку <a href="/">персональных данных</a></label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-callback" style="min-width: 220px">Регистрация</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+@@include('html/footer.html', {})

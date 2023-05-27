@@ -36,8 +36,9 @@ p.upper-text {
     display: flex;
     overflow: hidden;
     overflow-x: auto;
+    justify-content: center;
 }
 
 .doc-grid-slide > .doc-grid__item {
-    min-width: 222px;
+    max-width: 222px;
 }

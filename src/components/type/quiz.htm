@@ -1,0 +1,168 @@
+<section class="sections quiz-section">
+    <div class="container">
+        <h2 class="text-center">Закажите расчет стоимости кабин<br/>и получите дизайн-проект в подарок</h2>
+        <p class="desc-title text-center">по размерам вашего помещения</p>
+
+        <div class="quiz-wrapper quizJS">
+            <div class="quiz__header">
+                <svg role="presentation" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"> <rect x="27.5" y="4.1" class="st61" width="56.5" height="73.5"></rect> <line class="st61" x1="41.5" y1="22.1" x2="70.6" y2="22.1"></line> <line class="st61" x1="41.5" y1="38.8" x2="70.6" y2="38.8"></line> <line class="st61" x1="41.5" y1="55.5" x2="70.6" y2="55.5"></line> <polyline class="st61" points="66.4,77.6 66.4,95.6 9.8,95.6 9.8,22.1 27.5,22.1 "></polyline> </svg>
+                <span class="quiz__title">Ответьте на 5 вопросов и получите предварительный расчет стоимости</span>
+                <span class="quiz__step">1/4</span>
+            </div>
+            <div class="quiz__body">
+                <form action="" method="post">
+                    <div class="step-form">
+                        <p class="step-form__name">Какое количество кабин вам необходимо?</p>
+                        <div class="step-form__detail">
+                            <div class="form-group">
+                                <label class="label-radio">
+                                    <input type="radio" name="count-qabin" value="1" checked>
+                                    <span>1</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="label-radio">
+                                    <input type="radio" name="count-qabin" value="2">
+                                    <span>2</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="label-radio">
+                                    <input type="radio" name="count-qabin" value="3">
+                                    <span>3</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="label-radio">
+                                    <input type="radio" name="count-qabin" value="4">
+                                    <span>4</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="label-radio">
+                                    <input type="radio" name="count-qabin" value="5 и более">
+                                    <span>5 и более</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__footer">
+                            <button type="button" class="btn-quiz quiz-next" data-type="next">Далее</button>
+                        </div>
+                    </div>
+                    <div class="step-form">
+                        <p class="step-form__name">Укажите размеры вашего помещения, м</p>
+                        <div class="step-form__detail">
+                            <div class="form-group">
+                                <input type="text" class="input-transparent" name="sizes" placeholder="Ширина х Длина х Высота">
+                            </div>
+                        </div>
+                        <div class="quiz__footer">
+                            <button type="button" class="btn-quiz quiz-back" data-type="prev">Назад</button>
+                            <button type="button" class="btn-quiz quiz-next" data-type="next">Далее</button>
+                        </div>
+                    </div>
+                    <div class="step-form">
+                        <p class="step-form__name">Для каких процедур будут использоваться физиотерапевтические кабинеты?</p>
+                        <div class="step-form__detail">
+                            <div class="d-grid grid-check">
+
+                                <div class="form-group">
+                                    <label class="label-check-image">
+                                        <input type="checkbox" name="type-used-qabin[]" value="Электролечение">
+                                        <div class="image-checkbox">
+                                            <img src="@img/quiz/type-img-1.png" alt="">
+                                            <span>Электролечение</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-check-image">
+                                        <input type="checkbox" name="type-used-qabin[]" value="Грязелечение">
+                                        <div class="image-checkbox">
+                                            <img src="@img/quiz/type-img-2.png" alt="">
+                                            <span>Грязелечение</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-check-image">
+                                        <input type="checkbox" name="type-used-qabin[]" value="Массаж">
+                                        <div class="image-checkbox">
+                                            <img src="@img/quiz/type-img-3.png" alt="">
+                                            <span>Массаж</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-check-image">
+                                        <input type="checkbox" name="type-used-qabin[]" value="Другие физиопроцедуры">
+                                        <div class="image-checkbox">
+                                            <img src="@img/quiz/type-img-4.png" alt="">
+                                            <span>Другие физиопроцедуры</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="quiz__footer">
+                            <button type="button" class="btn-quiz quiz-back"  data-type="prev">Назад</button>
+                            <button type="button" class="btn-quiz" data-type="next">Далее</button>
+                        </div>
+                    </div>
+
+                    <div class="step-form">
+                        <p class="step-form__name">Нужны ли дополнительные услуги?</p>
+                        <div class="step-form__detail">
+                            <div class="form-group">
+                                <label class="label-checkbox">
+                                    <input type="checkbox" name="services[]" value="Замер">
+                                    <span>Замер</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="label-checkbox">
+                                    <input type="checkbox" name="services[]" value="Доставка">
+                                    <span>Доставка</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="label-checkbox">
+                                    <input type="checkbox" name="services[]" value="Монтаж">
+                                    <span>Монтаж</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="quiz__footer">
+                            <button type="button" class="btn-quiz quiz-back"  data-type="prev">Назад</button>
+                            <button type="button" class="btn-quiz" data-type="next">Последний вопрос</button>
+                        </div>
+                    </div>
+
+                    <div class="step-form">
+                        <div class="step-form__detail">
+                            <div class="form-group">
+                                <input type="text" class="input-transparent" name="fio" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="input-transparent" name="phone" placeholder="+7 (999) 999 99 99">
+                            </div>
+                        </div>
+                        <div class="quiz__footer">
+                            <button type="button" class="btn-quiz quiz-back" data-type="prev">Назад</button>
+                            <button type="submit" class="btn-quiz quiz-next" data-type="next">Отправить</button>
+                        </div>
+                    </div>
+
+                    <div class="success-form active">
+                        <div class="step-form__detail text-center">
+                            <p class="type-text-title">Спасибо</p>
+                            <p class="type-text-title-2">Ваша заявка успешно отправлена</p>
+                            <p class="type-text-1">Мы свяжемся с вами в ближайшее время.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

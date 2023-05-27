@@ -1,13 +1,15 @@
 .white-text {
     color: #FFF !important;
 }
-
-h2.title-num {
+.m0 {
+    margin: 0;
+}
+.title-num {
     position: relative;
     text-align: left;
 }
 
-h2.title-num::before {
+.title-num::before {
     content: attr(data-num);
     position: absolute;
     color: $titleColor;
@@ -77,4 +79,51 @@ ul.no-styled {
     border-color: transparent;
     border-style: solid;
     margin-bottom: 0;
+}
+
+.type-text-title {
+    color: #3091c5;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.type-text-title-2 {
+    color: #002d64;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.type-text-title-3 {
+    color: #002d64;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.type-text-title-4 {
+    color: #001c3d;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 500;
+}
+
+.break-white {
+    font-size: 14px;
+    white-space: nowrap;
+    display: block;
+}
+.link-style-more {
+    color: #3091c5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.small-text {
+    color: #001c3d;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 400;
 }

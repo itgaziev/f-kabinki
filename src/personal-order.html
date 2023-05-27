@@ -1,0 +1,102 @@
+@@include('html/header.html', { "title" : "Главная" })
+@@include('html/components/breadcrumbs.html')
+<div class="wrapper">
+    <section class="sections">
+        <div class="container">
+            <h1 class="pad-0 mb3">Личный кабинет</h1>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <nav class="nav flex-column nav-pills mb-6">
+                        <a class="nav-link active" aria-current="page" href="#">Мои заказы</a>
+                        <a class="nav-link" href="#">Личные данные</a>
+                        <a class="nav-link" href="#">Сменить пароль</a>
+                        <a class="nav-link" href="#">История заказов</a>
+                        <a class="nav-link" href="#">Корзина</a>
+                        <a class="nav-link" href="#">Выйти</a>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div class="personal_wrapper">
+                        <div class="orders_wrapper">
+                            <div class="block-order">
+                                <div class="block-order__title">Статус заказа</div>
+                                <div class="block-order__property">
+                                    <span class="block-order__name">Номер заказа:</span>
+                                    <span class="block-order__value">№32</span>
+                                </div>
+                                <div class="block-order__property">
+                                    <span class="block-order__name">Дата заказа:</span>
+                                    <span class="block-order__value">29.10.2022</span>
+                                </div>
+                                <div class="block-order__property">
+                                    <span class="block-order__name">Текущий статус:</span>
+                                    <span class="block-order__value">Отменен (от 29.10.2022)</span>
+                                </div>
+                                <div class="block-order__property">
+                                    <span class="block-order__name">Сумма:</span>
+                                    <span class="block-order__value">8 441 руб.</span>
+                                </div>
+                                <div class="block-order__property">
+                                    <span class="block-order__name">Позиций:</span>
+                                    <span class="block-order__value">3 товара</span>
+                                </div>
+                            </div>
+                            <div class="block-order">
+                                <div class="block-order__title">Личные данные</div>
+                                <div class="block-order__property">
+                                    <span class="block-order__name">Ф.И.О.:</span>
+                                    <span class="block-order__value">test</span>
+                                </div>
+                                <div class="block-order__property">
+                                    <span class="block-order__name">Телефон:</span>
+                                    <span class="block-order__value">+9 (999) 999-9999</span>
+                                </div>
+                                <div class="block-order__property">
+                                    <span class="block-order__name">Комментарий:</span>
+                                    <span class="block-order__text">
+                                        When successfully implemented, your nav or list group will update accordingly, moving the .active class from one item to the next based on their associated targets.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="block-order">
+                                <div class="block-order__title">Содержимое заказа</div>
+                                <div class="cart-list">
+                                    <div class="cart-list__wrapper">
+                                        <div class="cart-item">
+                                            <div class="cart-item__image">
+                                                <img src="@img/catalog/type1-0.jpg" alt="">
+                                            </div>
+                                            <div class="cart-item__name">
+                                                <a href="">Щиток розеточный физиотерапевтический ЭЩР-Ф-ОПТИМА-22</a>
+                                            </div>
+                                            <div class="cart-item__counter">
+                                                <input type="text" class="input input-quantity" value="1" readonly/>
+                                            </div>
+                                            <div class="cart-item__price">
+                                                <span class="price">2 345 руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-list__footer">
+                                        <span>Сумма заказа: 2 564 руб.</span>
+                                    </div>
+                                    <div class="order-item__buttons">
+                                        <div class="left-btn">
+                                        </div>
+                                        <div class="right-btn">
+                                            <a href="" class="btn btn-repeat">Повторить заказ</a>
+                                            <button class="btn btn-cancel">Отменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+@@include('html/footer.html', {})

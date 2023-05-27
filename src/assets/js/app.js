@@ -18,6 +18,18 @@ $(document).ready(function() {
             prevEl: ".swiper-button-prev",
         },
     });
+
+    new Swiper(".swiper-arrow.slider-thumbs", {
+        grabCursor: false,
+        centeredSlides: false,
+        slidesPerView: 4,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
     new Swiper(".swiper-arrow-section", {
         grabCursor: true,
         centeredSlides: false,
@@ -77,6 +89,34 @@ $(document).ready(function() {
           $(nextElem).addClass('active')
         }
     })
+
+    $(document).on('click', '.slider-thumbs .slide-item .swiper-bg[data-src]', function(e) {
+        e.preventDefault();
+        $('a.detail-img-box > img').attr('src', $(this).attr('data-src'));
+        $('.slider-thumbs .slide-item').removeClass('active');
+        $(this).parent().addClass('active');
+
+    })
+
+    $(document).on('click', '.filter-nav', function () {
+        let parent = $(this).closest('.filter-nav-wrapper');
+        $(parent).find('.filter-nav').removeClass('active')
+        $(this).addClass('active')
+        let index = $(this).attr('data-tab-index');
+        $(parent).find('.filter-item').removeClass('active');
+        $(parent).find('.filter-item[data-tab-index="'+index+'"]').addClass('active');
+    })
+
+    $(document).on('click', '.popap-card', function(){
+        // TODO : ajax content load
+        $('#popap-card').addClass('opened');
+        $('body').addClass('disable-scroll');
+    })
+
+    $(document).on('click', '.popap-container .close-popap', function() {
+        $(this).closest('.popap-container').removeClass('opened');
+        $('body').removeClass('disable-scroll');
+    })
 })
 const swiperDots = new Swiper(".swiper-dots", {
     pagination: {
@@ -102,3 +142,19 @@ const swiperCoverflow = new Swiper(".swiper-coverflow", {
     },
 });
 
+$(function() {
+    $(document).on('submit', '.reg-form', function(e) {
+        e.preventDefault();
+
+        $(this).addClass('was-validated')
+    })
+
+    $(document).on('change', '#inputRepeatPassword', function() {
+        let inputPassword = $('#inputPassword').val();
+        if(inputPassword !== $(this).val()) {
+            this.setCustomValidity('Passwords must match');
+        } else {
+            this.setCustomValidity('');
+        }
+    })
+})

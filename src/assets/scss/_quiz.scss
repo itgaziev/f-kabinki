@@ -18,9 +18,13 @@
         color: #FFF;
         grid-template-columns: 40px auto 40px;
         border-bottom: 4px solid #b6b6b6;
+        &.last-step-header {
+            grid-template-columns: 1fr;
+        }
         svg {
             width: 30px;
         }
+
     }
     .quiz__body {
         padding: 2rem;
@@ -176,7 +180,19 @@
     }
      
 }
-
+.quiz-result {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.success-form {
+    .step-form__detail {
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
 .step-form {
     display: none;
     &.active {

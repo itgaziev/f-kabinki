@@ -10,12 +10,15 @@
     }
 
     .service-item__image {
-        max-height: 320px;
         overflow: hidden;
         border-radius: 30px;
         display: flex;
         justify-content: center;
         align-items: center;    
+        height: 320px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         img {
             border-radius: 10px;
         }
